@@ -149,3 +149,31 @@ fun Formulir(
                             }
                         }
                     }
+                    Text(
+                        text = "ALAMAT",
+                        fontWeight = FontWeight.Bold,
+                        color = MaterialTheme.colorScheme.onSurface
+                    )
+                    OutlinedTextField(
+                        value = dummyTextValue.value,
+                        onValueChange = dummyOnValueChange,
+                        singleLine = true,
+                        modifier = Modifier.fillMaxWidth(),
+                        label = { Text(text = "Alamat") }
+                    )
+
+                    Button(
+                        onClick = OnSubmitButtonClick,
+                        colors = ButtonDefaults.buttonColors(containerColor = Purple40),
+                        modifier = Modifier.fillMaxWidth().height(50.dp),
+                        shape = RoundedCornerShape(10.dp),
+                    ) {
+                        Text(stringResource(R.string.submit),
+                            color = Color.White,
+                            fontWeight = FontWeight.Bold)
+                    }
+                }
+            }
+        }
+    }
+}
