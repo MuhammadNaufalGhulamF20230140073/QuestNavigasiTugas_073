@@ -64,3 +64,11 @@ fun Formulir(
                     .background(Purple80)
                     .padding(16.dp),
                 contentAlignment = Alignment.BottomStart
+            ) {
+                Text(
+                    text = "Formulir Pendaftaran",
+                    fontSize = 24.sp,
+                    fontWeight = FontWeight.Bold,
+                    color = Color.White
+                )
+            }
