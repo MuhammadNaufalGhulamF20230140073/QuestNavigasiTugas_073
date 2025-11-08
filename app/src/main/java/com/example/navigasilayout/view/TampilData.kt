@@ -50,3 +50,14 @@ fun TampilData(
         stringResource(id = R.string.jenis_kelamin) to "Laki-Laki",
         stringResource(id = R.string.alamat) to "Gedriyan"
     )
+    Scaffold(modifier = Modifier,
+        {
+            TopAppBar(
+                title = {Text(text = stringResource(id = R.string.tampil),
+                    color = Color.White
+                )},
+                colors = TopAppBarDefaults
+                    .mediumTopAppBarColors(colorResource
+                        (id = R.color.teal_700)
+                    )
+            )
