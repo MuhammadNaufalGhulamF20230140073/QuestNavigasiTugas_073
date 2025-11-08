@@ -39,3 +39,13 @@ fun DataApp(
                     OnToFormBtnClick = {
                         navController.popBackStack()
                     },
+                    OnToHomeBtnClick = {
+                        navController.navigate(Navigasi.HomeScreen.name) {
+                            popUpTo(Navigasi.HomeScreen.name) {
+                                inclusive = true
+                            }
+                            launchSingleTop = true
+                        }
+                    }
+                )
+            }
