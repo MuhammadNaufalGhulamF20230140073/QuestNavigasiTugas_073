@@ -53,3 +53,25 @@ fun HomeScreen(
                 modifier = Modifier.height(200.dp)
             )
         }
+        Spacer(modifier = Modifier.height(96.dp))
+
+        Text(text = stringResource(R.string.nama),
+            fontSize = 25.sp,
+            fontWeight = FontWeight.Bold,
+            color = Purple80)
+        Text(text = stringResource(R.string.NIM),
+            fontSize = 23.sp,
+            fontWeight = FontWeight.Bold,
+            color = Purple80)
+
+        Spacer(modifier = Modifier.height(108.dp))
+
+        Button(
+            onClick = OnToFormBtnClick,
+            modifier = Modifier.fillMaxWidth(0.7f).height(50.dp)
+        ) {
+            Text(text = stringResource(R.string.submit))
+        }
+    }
+}
+}
