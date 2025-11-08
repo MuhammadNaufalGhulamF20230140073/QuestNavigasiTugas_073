@@ -34,3 +34,8 @@ fun DataApp(
                         navController.navigate(Navigasi.Formulir.name)
                     }
                 )}
+            composable(route = Navigasi.DataPeserta.name) {
+                TampilData(
+                    OnToFormBtnClick = {
+                        navController.popBackStack()
+                    },
