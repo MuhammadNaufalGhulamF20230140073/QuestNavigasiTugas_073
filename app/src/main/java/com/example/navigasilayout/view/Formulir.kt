@@ -51,3 +51,16 @@ fun Formulir(
 
     val genderOptions = listOf("Laki-laki", "Perempuan")
     val statusOptions = listOf("Janda", "Lajang", "Duda")
+
+    Surface(
+        modifier = Modifier.fillMaxSize(),
+        color = LightBlue
+    ) {
+        Column(modifier = Modifier.fillMaxSize()) {
+            Box(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(100.dp)
+                    .background(Purple80)
+                    .padding(16.dp),
+                contentAlignment = Alignment.BottomStart
