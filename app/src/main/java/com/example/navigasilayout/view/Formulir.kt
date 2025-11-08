@@ -72,3 +72,15 @@ fun Formulir(
                     color = Color.White
                 )
             }
+            Card(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(16.dp),
+                shape = RoundedCornerShape(8.dp),
+                elevation = CardDefaults.cardElevation(
+                    defaultElevation = 8.dp
+                ),
+                colors = CardDefaults.cardColors(
+                    containerColor = Color.White
+                )
+            ) {
