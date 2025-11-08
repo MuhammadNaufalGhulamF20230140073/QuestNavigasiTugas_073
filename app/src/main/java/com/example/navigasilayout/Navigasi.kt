@@ -49,3 +49,13 @@ fun DataApp(
                     }
                 )
             }
+            composable(route = Navigasi.Formulir.name) {
+                Formulir(
+                    OnSubmitButtonClick = {
+                        navController.navigate(Navigasi.DataPeserta.name)
+                    }
+                )
+            }
+        }
+    }
+}
