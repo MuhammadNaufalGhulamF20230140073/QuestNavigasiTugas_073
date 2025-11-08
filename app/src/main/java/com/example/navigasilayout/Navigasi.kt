@@ -18,3 +18,19 @@ enum class Navigasi {
     DataPeserta,
     Formulir
 }
+@Composable
+fun DataApp(
+    navController: NavHostController = rememberNavController(),
+    modifier: Modifier
+){
+    Scaffold { isiRuang->
+        NavHost(navController = navController,
+            startDestination = Navigasi.HomeScreen.name,
+            modifier = Modifier.padding(isiRuang))
+        {
+            composable(route = Navigasi.HomeScreen.name) {
+                HomeScreen(
+                    OnToFormBtnClick = {
+                        navController.navigate(Navigasi.Formulir.name)
+                    }
+                )}
