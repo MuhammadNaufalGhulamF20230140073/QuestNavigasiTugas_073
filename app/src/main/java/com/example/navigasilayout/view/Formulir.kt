@@ -90,3 +90,16 @@ fun Formulir(
                         .padding(all = 16.dp),
                     verticalArrangement = Arrangement.spacedBy(16.dp),
                     horizontalAlignment = Alignment.Start
+                ) {
+                    Text(
+                        text = "NAMA LENGKAP",
+                        fontWeight = FontWeight.Bold,
+                        color = MaterialTheme.colorScheme.onSurface
+                    )
+                    OutlinedTextField(
+                        value = dummyTextValue.value,
+                        onValueChange = dummyOnValueChange,
+                        singleLine = true,
+                        modifier = Modifier.fillMaxWidth(),
+                        label = { Text(text = "Isian nama lengkap") }
+                    )
