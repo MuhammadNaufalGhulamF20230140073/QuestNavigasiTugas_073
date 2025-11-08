@@ -39,3 +39,17 @@ fun HomeScreen(
             verticalArrangement = Arrangement.Center,
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
+            Text(text = stringResource(R.string.selamat_datang),
+                fontSize = 50.sp,
+                fontWeight = FontWeight.Bold,
+                color = Purple80
+            )
+
+            Spacer(modifier = Modifier.height(72.dp))
+
+            Image(
+                painter = painterResource(id = R.drawable.logo_form),
+                contentDescription = "Logo",
+                modifier = Modifier.height(200.dp)
+            )
+        }
