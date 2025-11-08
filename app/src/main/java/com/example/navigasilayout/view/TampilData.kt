@@ -77,3 +77,18 @@ fun TampilData(
                     }
                     HorizontalDivider(thickness = 1.dp, color = Color.Cyan)
                 }
+                Spacer(modifier = Modifier.height(height = 10.dp))
+                Button(
+                    modifier = Modifier.fillMaxWidth(),
+                    onClick = OnToFormBtnClick) {
+                    Text(text = stringResource(id=R.string.FormulirPendaftaran))
+                }
+                Button(
+                    modifier = Modifier.fillMaxWidth(),
+                    onClick = OnToHomeBtnClick) {
+                    Text(text = stringResource(id=R.string.home))
+                }
+            }
+        }
+    }
+}
