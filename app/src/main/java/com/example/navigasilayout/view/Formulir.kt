@@ -84,3 +84,9 @@ fun Formulir(
                     containerColor = Color.White
                 )
             ) {
+                Column(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(all = 16.dp),
+                    verticalArrangement = Arrangement.spacedBy(16.dp),
+                    horizontalAlignment = Alignment.Start
